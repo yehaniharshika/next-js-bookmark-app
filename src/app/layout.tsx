@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { lilitaOne, nunito } from "./fonts/fonts";
+import { lilitaOne, nunito, rubikGemstones } from "./fonts/fonts";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} ${lilitaOne.className} antialiased`}>
+      <body className={`${nunito.className} ${lilitaOne.className} ${rubikGemstones.className} antialiased`}>
         <ResponsiveNav />
         {children}
       </body>

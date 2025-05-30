@@ -1,4 +1,4 @@
-import { Lilita_One, Nunito } from "next/font/google";
+import { Lilita_One, Nunito, Rubik_Gemstones } from "next/font/google";
 
 export const nunito = Nunito({
   weight: ['200','300','400','500','600','700','800','900'],
@@ -11,3 +11,8 @@ export const lilitaOne = Lilita_One({
   subsets: ['latin'],
   variable: '--font-lilita',
 });
+
+export const rubikGemstones = Rubik_Gemstones({
+    weight: ['400'],
+    subsets: ["latin"]
+})
