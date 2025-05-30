@@ -2,7 +2,7 @@ import { navLinks } from "@/constant/constants";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GiNotebook } from "react-icons/gi";
-import { lilitaOne, nunito } from "@/app/fonts/fonts";
+import { lilitaOne, montserrat, nunito } from "@/app/fonts/fonts";
 import { HiMenuAlt1 } from "react-icons/hi";
 
 type Props = {
@@ -22,7 +22,7 @@ const Navbar = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className= {` ${navBg?'bg-rose-900 shadow:md':'fixed'} transition-all duration-200 h-[9vh] z-[1000] fixed w-full`}>
+    <div className= {` ${navBg?'bg-pink-800 shadow:md':'fixed'} transition-all duration-200 h-[9vh] z-[1000] fixed w-full`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* logo */}
         <div className="flex items-center space-x-2">
@@ -39,8 +39,8 @@ const Navbar = ({ openNav }: Props) => {
           {navLinks.map((link) => (
             <Link href={link.url} key={link.id}>
               <p
-                className={`relative ${nunito.className} text-white hover:text-pink-300 text-base w-fit`}
-                style={{ fontSize: "14px", fontWeight: "800" }}
+                className={`relative ${montserrat.className} text-white hover:text-pink-300 w-fit`}
+                style={{ fontSize: "13px", fontWeight: "700" }}
               >
                 {link.label}
               </p>

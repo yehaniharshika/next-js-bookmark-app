@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const BookMark = () => {
   return (
-    <div className={`p-6 bg-pink-100 min-h-screen`}>
+    <div className={`p-6 bg-[#c4899b] min-h-screen`}>
       <div className="text-center mb-8">
         <h1 className={`text-3xl font-bold text-pink-800 ${lilitaOne.className}`}>Your Bookmarks</h1>
         <p

@@ -6,7 +6,7 @@ import { TbBookmarkPlus, TbFolders, TbWorldCheck } from "react-icons/tb";
 
 const About = () => {
   return (
-    <div className="min-h-90vh bg-pink-100 py-12 px-6 sm:px-10 md:px-20">
+    <div className="min-h-90vh bg-[#c4899b] py-12 px-6 sm:px-10 md:px-20">
       {/* Header & Description */}
       <div className="text-center mb-12">
         <h4
@@ -33,7 +33,7 @@ const About = () => {
         style={{ maxWidth: "76%" }}
       >
         {/* Card 1 */}
-        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600">
+        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-[#a0425f]">
           <TbBookmarkPlus className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
             className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600">
+        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-[#a0425f]">
           <TbFolders className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
             className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
@@ -61,7 +61,7 @@ const About = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600border-2 border-pink-600">
+        <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600border-2 border-[#a0425f]">
           <TbWorldCheck className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
             className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
