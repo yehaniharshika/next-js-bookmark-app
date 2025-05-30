@@ -1,36 +1,56 @@
 "use client";
 
+import { montserrat } from "@/app/fonts/fonts";
 import { bookmarkData } from "@/data/data";
 import React from "react";
-import { FaStar, FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaTrash, FaHeart } from "react-icons/fa";
 
+import Image from "next/image";
 
-const BookMark: React.FC = () => {
+const BookMark = () => {
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
+    <div className={`p-6 bg-pink-100 min-h-screen`}>
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Your Bookmarks</h1>
-        <p className="text-gray-600 mt-2 max-w-xl mx-auto">
-          Save, edit, and manage your favorite learning resources in one organized space.
+        <p
+          className={`text-gray-600 mt-2 max-w-xl mx-auto ${montserrat.className} `}
+          style={{ fontWeight: "600" }}
+        >
+          Save, edit, and manage your favorite learning resources in one
+          organized space.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto"
+        style={{ maxWidth: "76%" }}
+      >
         {bookmarkData.map((bookmark) => (
           <div
             key={bookmark.id}
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
           >
-            <img
-              src={bookmark.image}
-              alt={bookmark.title}
-              className="w-full h-40 object-cover"
-            />
+            {typeof bookmark.image === "string" ? (
+              <img
+                src={bookmark.image}
+                alt={bookmark.title}
+                className="w-full h-40 object-cover"
+              />
+            ) : (
+              <Image
+                src={bookmark.image}
+                alt={bookmark.title}
+                className="w-full h-40 object-cover"
+                width={400}
+                height={160}
+              />
+            )}
+
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-800 mb-2">
                 {bookmark.title}
               </h2>
-              <p className="text-sm text-gray-600 mb-2 line-clamp-3">
+              <p className="text-sm text-gray-600 mb-2">
                 {bookmark.description}
               </p>
               <a
@@ -49,7 +69,7 @@ const BookMark: React.FC = () => {
               </p>
               <div className="flex justify-end gap-4 mt-4 text-gray-600">
                 <button className="hover:text-yellow-500" aria-label="Favorite">
-                  <FaStar size={18} />
+                  <FaHeart size={18} />
                 </button>
                 <button className="hover:text-blue-500" aria-label="Edit">
                   <FaEdit size={18} />

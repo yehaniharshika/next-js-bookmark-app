@@ -6,7 +6,7 @@ import { TbBookmarkPlus, TbFolders, TbWorldCheck } from "react-icons/tb";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-pink-100 py-12 px-6 sm:px-10 md:px-20">
+    <div className="min-h-90vh bg-pink-100 py-12 px-6 sm:px-10 md:px-20">
       {/* Header & Description */}
       <div className="text-center mb-12">
         <h4
@@ -30,7 +30,7 @@ const About = () => {
       {/* Feature Cards */}
       <div
         className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto"
-        style={{ maxWidth: "70%" }}
+        style={{ maxWidth: "76%" }}
       >
         {/* Card 1 */}
         <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600">
