@@ -1,4 +1,4 @@
-# 🔖 Smart Bookmark Manager (Frontend Only)
+# 🔖 Pinfolio - Smart Bookmark Manager (Frontend Only)
 
 A clean and simple **Next.js + Tailwind CSS** frontend web app to manage and display your favorite bookmarks in a card layout. Ideal for practicing modern web design and frontend development with React-based frameworks.
 
@@ -6,7 +6,7 @@ A clean and simple **Next.js + Tailwind CSS** frontend web app to manage and dis
 
 ## 📚 Description
 
-This project is a beginner-friendly frontend implementation of a **Smart Bookmark Manager**, where you can list bookmarks with images, titles, descriptions, and links. It's built with **Next.js App Router** and **Tailwind CSS**. No backend is connected — all data is currently hardcoded for learning purposes.
+This project is a frontend implementation of a Smart Bookmark Manager, where you can list bookmarks with images, titles, descriptions, and links. It's built with Next.js App Router and Tailwind CSS. No backend is connected - all data is currently hardcoded for learning purposes.
 
 ---
 
@@ -25,16 +25,17 @@ This project is a beginner-friendly frontend implementation of a **Smart Bookmar
 
 ## 🛠️ Tech Stack
 
-| Layer    | Technology        |
-|----------|-------------------|
-| Frontend | React,Next.js |
-| Styling  | Tailwind CSS      |
-| Icons    | React Icons (FontAwesome) |
-| Fonts    | Google Fonts      |
+| Layer      | Technology                |
+|------------|---------------------------|
+| Framework  | Next.js (React-based)     |
+| Frontend   | React.js                  |
+| Styling    | Tailwind CSS              |
+| Icons      | React Icons               |
+| Fonts      | Google Fonts              |
 
 ---
 
-## 📦 Installation
+## ⚙️ Setup and Installation
 
 ### 1. Clone the Repository
 
