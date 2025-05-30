@@ -1,6 +1,6 @@
 "use client";
 
-import { montserrat } from "@/app/fonts/fonts";
+import { lilitaOne, montserrat } from "@/app/fonts/fonts";
 import { bookmarkData } from "@/data/data";
 import React from "react";
 import { FaEdit, FaTrash, FaHeart } from "react-icons/fa";
@@ -11,7 +11,7 @@ const BookMark = () => {
   return (
     <div className={`p-6 bg-pink-100 min-h-screen`}>
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">Your Bookmarks</h1>
+        <h1 className={`text-3xl font-bold text-pink-800 ${lilitaOne.className}`}>Your Bookmarks</h1>
         <p
           className={`text-gray-600 mt-2 max-w-xl mx-auto ${montserrat.className} `}
           style={{ fontWeight: "600" }}

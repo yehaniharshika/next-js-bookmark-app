@@ -2,7 +2,7 @@ import { navLinks } from "@/constant/constants";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GiNotebook } from "react-icons/gi";
-import { nunito } from "@/app/fonts/fonts";
+import { lilitaOne, nunito } from "@/app/fonts/fonts";
 import { HiMenuAlt1 } from "react-icons/hi";
 
 type Props = {
@@ -29,7 +29,7 @@ const Navbar = ({ openNav }: Props) => {
           <div className="w-10 h-10 bg-pink-400 rounded-full flex items-center justify-center">
             <GiNotebook className="w-6 h-6 text-white" />
           </div>
-          <h1 className="text-xl md:text-2xl text-white uppercase font-bold">
+          <h1 className={`text-xl md:text-2xl text-white uppercase font-bold ${lilitaOne.className}`}>
             Pinfolio
           </h1>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { lilitaOne, nunito } from "@/app/fonts/fonts";
+import { lilitaOne, montserrat, nunito } from "@/app/fonts/fonts";
 import React from "react";
 import { TbBookmarkPlus, TbFolders, TbWorldCheck } from "react-icons/tb";
 
@@ -36,11 +36,11 @@ const About = () => {
         <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600">
           <TbBookmarkPlus className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
-            className={`text-xl font-bold text-rose-900 mb-2 ${nunito.className}`}
+            className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
           >
             Easy Bookmarking
           </h2>
-          <p className={`text-gray-700 ${nunito.className}`}>
+          <p className={`text-gray-700 ${montserrat.className}`} style={{fontWeight:"500",fontSize:"15px"}}>
             Quickly save links with one click and organize them into categories
             and folders.
           </p>
@@ -50,11 +50,11 @@ const About = () => {
         <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600">
           <TbFolders className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
-            className={`text-xl font-bold text-rose-900 mb-2 ${nunito.className}`}
+            className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
           >
             Organized Collections
           </h2>
-          <p className={`text-gray-700 ${nunito.className}`}>
+          <p className={`text-gray-700 ${montserrat.className}`}  style={{fontWeight:"500",fontSize:"15px"}}>
             Sort your favorite websites with folders, tags, and labels for easy
             access anytime.
           </p>
@@ -64,11 +64,11 @@ const About = () => {
         <div className="bg-pink-200 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center border-2 border-pink-600border-2 border-pink-600">
           <TbWorldCheck className="text-5xl text-pink-600 mx-auto mb-3" />
           <h2
-            className={`text-xl font-bold text-rose-900 mb-2 ${nunito.className}`}
+            className={`text-xl font-bold text-rose-900 mb-2 ${montserrat.className}`}
           >
             Access Anywhere
           </h2>
-          <p className={`text-gray-700 ${nunito.className}`}>
+          <p className={`text-gray-700 ${montserrat.className}`}  style={{fontWeight:"500",fontSize:"15px"}}>
             Access bookmarks from any device with secure cloud syncing across
             your browsers.
           </p>
